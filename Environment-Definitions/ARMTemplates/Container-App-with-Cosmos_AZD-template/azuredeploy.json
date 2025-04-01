@@ -246,8 +246,7 @@
       "webStaticSites": "stapp-"
     },
     "abbrs": "[variables('$fxv#0')]",
-    //"resourceToken": "[toLower(uniqueString(subscription().id, resourceGroup().name, parameters('location')))]",
-    "resourceToken": "iagdemo001",
+    "resourceToken": "[toLower(uniqueString(subscription().id, resourceGroup().name, parameters('location')))]",
     "tags": {
       "azd-env-name": "[parameters('runtimeType')]",
       "Environment": "Demo",
