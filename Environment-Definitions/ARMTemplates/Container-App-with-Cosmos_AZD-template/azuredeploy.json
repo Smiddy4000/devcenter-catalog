@@ -246,9 +246,12 @@
       "webStaticSites": "stapp-"
     },
     "abbrs": "[variables('$fxv#0')]",
-    "resourceToken": "[toLower(uniqueString(subscription().id, resourceGroup().name, parameters('location')))]",
+    //"resourceToken": "[toLower(uniqueString(subscription().id, resourceGroup().name, parameters('location')))]",
+    "resourceToken": "iagdemo001",
     "tags": {
-      "azd-env-name": "[parameters('runtimeType')]"
+      "azd-env-name": "[parameters('runtimeType')]",
+      "Environment": "Demo",
+      "Project": "IAG"
     },
     "apiContainerAppNameOrDefault": "[format('{0}web-{1}', variables('abbrs').appContainerApps, variables('resourceToken'))]"
   },
